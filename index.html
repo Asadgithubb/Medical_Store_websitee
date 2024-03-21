@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My webmed Store</title>
+<style>
+    /* Basic styling */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('data:image/jpeg;base64,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'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* This ensures that the background image covers the entire body */
+}
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+       
+    }
+    table {
+        background-color: #f2f2f2;
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    .btn:hover {
+        background-color: #45a049;
+    }
+    #search-bar {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Medical Store</h2>
+    <input type="text" id="search-bar" placeholder="Search by Medicine Name" oninput="searchMedicine(this.value)">
+    <table id="medicine-table">
+        <tr>
+            <th>Medicine Name</th>
+            <th>Price (PKR)</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    <div>
+        <input type="text" id="medicine-name" placeholder="Medicine Name">
+        <input type="number" id="medicine-price" placeholder="Price">
+        <button onclick="addMedicine()" class="btn">Add Medicine</button>
+        <button onclick="makeBill()" class="btn">Total Bill</button>
+        <button onclick="removeBill()" class="btn">Remove Bill</button> <!-- New button for removing bill details -->
+    </div>
+    <h3>Bill</h3>
+    <div id="bill"></div>
+</div>
+<script>
+    let medicines = [];
+    let billMedicines = [];
+
+    function addMedicine() {
+        const name = document.getElementById("medicine-name").value;
+        const price = parseFloat(document.getElementById("medicine-price").value);
+        
+        if (name && price) {
+            medicines.push({ name, price });
+            displayMedicines();
+        } else {
+            alert("Please enter both medicine name and price.");
+        }
+    }
+
+    function displayMedicines(filteredMedicines = null) {
+        const table = document.getElementById("medicine-table");
+        table.innerHTML = "<tr><th>Medicine Name</th><th>Price (PKR)</th><th>Action</th></tr>";
+        
+        const medsToDisplay = filteredMedicines || medicines;
+        
+        medsToDisplay.forEach((medicine, index) => {
+            const row = table.insertRow();
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
+            cell1.innerHTML = medicine.name;
+            cell2.innerHTML = formatPrice(medicine.price);
+            cell3.innerHTML = `<button onclick="editMedicine(${index})" class="btn">Edit</button>
+                                <button onclick="deleteMedicine(${index})" class="btn">Delete</button>
+                                <button onclick="addToBill(${index})" class="btn">Add to Bill</button>`;
+        });
+    }
+
+    function formatPrice(price) {
+        return `₨${price.toFixed(2)}`; // Simply adding PKR symbol to the price
+    }
+
+    function editMedicine(index) {
+        const newName = prompt("Enter new name for the medicine:");
+        const newPrice = parseFloat(prompt("Enter new price for the medicine:"));
+        
+        if (newName && newPrice) {
+            medicines[index].name = newName;
+            medicines[index].price = newPrice;
+            displayMedicines();
+        } else {
+            alert("Invalid input. Name and price must be provided.");
+        }
+    }
+
+    function deleteMedicine(index) {
+        medicines.splice(index, 1);
+        displayMedicines();
+    }
+
+    function addToBill(index) {
+        const medicine = medicines[index];
+        billMedicines.push(medicine); // Add the medicine to the billMedicines array
+        const billDiv = document.getElementById("bill");
+        billDiv.innerHTML += `<p>${medicine.name}: ${formatPrice(medicine.price)}</p>`;
+    }
+
+    function makeBill() {
+        const billDiv = document.getElementById("bill");
+        billDiv.innerHTML = ""; // Clear bill before updating
+        let total = 0;
+        billMedicines.forEach((medicine) => {
+            billDiv.innerHTML += `<p>${medicine.name}: ${formatPrice(medicine.price)}</p>`;
+            total += medicine.price;
+        });
+        billDiv.innerHTML += `<hr><h3>Total Bill: ${formatPrice(total)}</h3>`;
+    }
+
+    function removeBill() {
+        billMedicines = []; // Clear the array storing bill medicines
+        document.getElementById("bill").innerHTML = ""; // Clears the bill details
+    }
+
+    function searchMedicine(keyword) {
+        const filteredMedicines = medicines.filter(medicine => medicine.name.toLowerCase().includes(keyword.toLowerCase()));
+        displayMedicines(filteredMedicines);
+    }
+</script>
+
+
+</body>
+</html>
