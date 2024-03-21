@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('gradient-connection-background_52683-118592.avif');
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    
+.container {
+        lighting-color: aqua;
+        
+        padding: 50px;
+        border-radius: 50px;
+        box-shadow: 5px px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        shape-margin: 4%;
+        color: #22dd2b;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: rgb(26, 14, 14);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .signup-link {
+        text-align: center;
+        color: #62c267;
+        margin-top: 10px;
+    }
+    .signup-link a {
+        text-align: center;
+        color: rgb(230, 230, 238);
+        text-decoration: none;
+    }
+    input[type="submit"]:hover {
+        background-color: #228d28;
+    }
+    .error-message {
+        color: red;
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Sign Up</h2>
+    <form action="signup.php" method="post" onsubmit="return validateForm()">
+        <input type="text" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign Up">
+    </form>
+    <div class="login-link">
+             Already have an account? <a href="login.html">Login</a>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if (email.trim() === "" || password.trim() === "") {
+            alert("Please fill out all fields.");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
